@@ -1,0 +1,16 @@
+name: My first Workflow Beconfident
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  be:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Ubuntu Version
+        run: cat /etc/os-release
+
+      - name: Write a message
+        run: echo "Hello world, im running my first workflow!"
